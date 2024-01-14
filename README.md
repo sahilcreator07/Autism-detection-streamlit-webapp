@@ -1,6 +1,6 @@
 # Autism Spectrum Disorder
 
-Project Description:
+# Project Description:
 
 The ASD Detection and Support Web App is a comprehensive platform designed to facilitate the early detection of Autism Spectrum Disorder (ASD) and provide valuable resources for individuals, parents, and caregivers. This Streamlit-based web application leverages a Python machine learning model to aid in the early diagnosis of ASD. Additionally, it offers statistical insights into the prevalence and trends of ASD over the last 5 years.
 
@@ -36,9 +36,9 @@ The primary goal of this web app is to contribute to the early detection of ASD,
 The activities section serves as a valuable resource for individuals with ASD, promoting skill development, social interaction, and a sense of community. The educational resources further empower parents, caregivers, and educators with information to enhance their support for individuals with ASD.
 
 Future Enhancements:
-# Integration of additional machine learning models for enhanced accuracy.
-# Real-time data updates for the statistical insights section.
-# Expansion of the activities section with personalized recommendations based on user preferences and progress.
+-> Integration of additional machine learning models for enhanced accuracy.
+-> Real-time data updates for the statistical insights section.
+-> Expansion of the activities section with personalized recommendations based on user preferences and progress.
 
 
 # Conclusion:
