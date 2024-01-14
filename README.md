@@ -36,6 +36,7 @@ The primary goal of this web app is to contribute to the early detection of ASD,
 The activities section serves as a valuable resource for individuals with ASD, promoting skill development, social interaction, and a sense of community. The educational resources further empower parents, caregivers, and educators with information to enhance their support for individuals with ASD.
 
 Future Enhancements:
+
 -> Integration of additional machine learning models for enhanced accuracy.
 -> Real-time data updates for the statistical insights section.
 -> Expansion of the activities section with personalized recommendations based on user preferences and progress.
