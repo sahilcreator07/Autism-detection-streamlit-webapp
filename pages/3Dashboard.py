@@ -2,18 +2,23 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.title(":signal_strength: :blue[ Let's take a look at the statistics of last 5 years]")
+st.title(":signal_strength: :violet[ Let's take a look at the statistics of last 5 years]")
 st.write("---")
 
 df = pd.read_csv("data_csv.csv")   
 
 ASD_traits_data=df["ASD_traits"].unique().tolist()
+# filer kiya dataframe
 select_date=st.selectbox("ASD traits ?",ASD_traits_data)
+# ab select kar asd_traits data from ASD_traits_data
 df_up=df[df["ASD_traits"].isin(ASD_traits_data)]
 
+# select gender fir pass that value to select_sub. fir select_sub se value df_up_sub bhejo jo agge graph banane ke liye use hoga.
 sub_opt=df_up["Sex"].unique().tolist()
 select_sub=st.multiselect("Gender",sub_opt)
+
 df_up_sub=df_up[df_up["Sex"].isin(select_sub)]
+
 st.write("---")
 col1,col2=st.columns(2)
 with col1:

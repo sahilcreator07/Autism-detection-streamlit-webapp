@@ -5,12 +5,12 @@ from PIL import Image
 
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
-st.title(":blue[Autism Spectrum Disorder]")
+st.title(":violet[Autism Spectrum Disorder]")
 st.write("---")
 with st.container():
     col1,col2= st.columns([3,2])
     with col1:
-        st.title("What is Autism Spectrum Disorder?")
+        st.title(":violet[What is Autism Spectrum Disorder?]")
         st.write("""
         Autism spectrum disorder (ASD) is a developmental disability caused by differences in the brain. People with ASD often have problems with social communication and interaction, and restricted or repetitive behaviors or interests. People with ASD may also have different ways of learning, moving, or paying attention.
         """)
@@ -22,7 +22,7 @@ with st.container():
 with st.container():
     col1,col2= st.columns([4,2])
     with col1:
-        st.title("What Causes Autism Spectrum Disorder?")
+        st.title(":violet[What Causes Autism Spectrum Disorder?]")
         st.write("""
         The Autism Spectrum Disorder Foundation lists the following as possible causes of ASD:
 
@@ -40,7 +40,7 @@ with st.container():
 with st.container():
     col1,col2= st.columns([4,2])
     with col1:
-        st.title("Symptoms of ASD:")
+        st.title(":violet[Symptoms of ASD:]")
     
         st.write("""
         1. Avoids or does not keep eye contact
@@ -67,14 +67,11 @@ with st.container():
         img1=Image.open("image/Strategies.jpeg")
         st.image(img1,caption="")
     
-
-
-# ---- WHAT I DO ----
 with st.container():
 
     left_column, right_column = st.columns([4,2])
     with left_column:
-        st.title("Relevent statistics ")
+        st.title(":violet[Relevent statistics]")
         
         st.write("""
             The exact prevalence of Autism Spectrum Disorder (ASD) in India is not well-established due to a lack of nationwide studies and consistent diagnostic criteria. However, some studies have estimated that the prevalence of ASD in India is between 1 and 2 per 1000 children.
@@ -104,7 +101,7 @@ with st.container():
         st.image(img1,width=350,caption="USA data over 18 years")
 
 with st.container():
-    st.title("World Autism Awareness Day")
+    st.title(":orange[World Autism Awareness Day]")
     st.write(
         "This year, WAAD will be observed with a virtual event on Sunday, 2 April, from 10:00 a.m. to 1:00 p.m. EDT.The event is organized in close collaboration with autistic people and will feature autistic people from around the world discussing how the transformation in the narrative around neurodiversity can continue to be furthered in order to overcome barriers and improve the lives of autistic people. It will also address the contributions that autistic people make – and can make – to society, and to the achievement of the Sustainable Development Goals."
     )

@@ -9,7 +9,7 @@ from sklearn import svm
 from sklearn.metrics import accuracy_score
 
 # autism_df=pickle.load(open("autism_dataset.pkl","rb"))
-st.title(":bookmark_tabs: :blue[Autism data assesment]")
+st.title(":bookmark_tabs: :violet[Autism data assesment]")
 st.write("---")
 st.write("Fill the form below to check if your child is suffering from ASD ")
 autism_dataset = pd.read_csv('asd_data_csv.csv') 
@@ -26,20 +26,20 @@ standardized_data = scaler.transform(X)
 X = standardized_data
 Y = autism_dataset['Outcome']
 X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size = 0.2, stratify=Y, random_state=2)
-# st.write(X.shape, X_train.shape, X_test.shape)
+
 
 #Training the Model
 classifier = svm.SVC(kernel='linear')
-#training the support vector Machine Classifier
+
 classifier.fit(X_train, Y_train)
-#Accuracy Score
-# accuracy score on the training data
+#Accuracy Score on trainig data
+
 X_train_prediction = classifier.predict(X_train)
 training_data_accuracy = accuracy_score(X_train_prediction, Y_train)
-# st.write('Accuracy score of the training data : ', training_data_accuracy)
+
 X_test_prediction = classifier.predict(X_test)
 test_data_accuracy = accuracy_score(X_test_prediction, Y_test)
-# st.write('Accuracy score of the test data : ', test_data_accuracy)
+
 
 def ValueCount(str):
   if str=="Yes":
@@ -51,8 +51,9 @@ def Sex(str):
     return 1
   else:
     return 0
+  
 #Form layout goes here...
-# ,Family_member_with_ASD,Outcome
+
 d1=[0,1,2,3,4,5,6,7,8,9,10]
 val1 = st.selectbox("Social Responsiveness ",d1)
 
@@ -95,7 +96,7 @@ input_data = [val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11,val12]
 
 # changing the input_data to numpy array
 input_data_as_numpy_array = np.asarray(input_data)
-# st.write(input_data_as_numpy_array)
+
 
 # reshape the array as we are predicting for one instance
 input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
